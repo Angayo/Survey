@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Bible Survey Form</h1>
+
+    <form id="form">
+      <div class="form-control">
+        <label for="name" id="label-name">Name</label>
+        <input type="text" id="name" placeholder="Enter your Name" />
+      </div>
+      <div class="form-control">
+        <label for="email" id="label-email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" />
+      </div>
+      <div class="form-control">
+        <label for="age" id="label-age">Age</label>
+        <input type="text" id="age" placeholder="Enter your Age" />
+      </div>
+      <div class="form-control">
+        <label for="role" id="label-role"
+          >Which options best describes you?</label
+        >
+        <select name="role" id="role">
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label> Would you recommend a friend ?</label>
+        <label for="recommend-1">
+          <input type="radio" id="recommend-1" name="recommend" /> Yes
+        </label>
+        <label for="recommend-2">
+          <input type="radio" id="recommend" /> No
+        </label>
+        <label for="recommend-3">
+          <input type="radio" id="recommend" /> Maybe
+        </label>
+      </div>
+      <div class="form-control">
+        <label
+          >Which denomination are you<small
+            >(Check all that apply)</small
+          ></label
+        >
+        <label for="inp-1">
+          <input type="checkbox" name="inp" /> Catholic
+        </label>
+        <label for="inp-2">
+          <input type="checkbox" name="inp" /> Protestant
+        </label>
+        <label for="inp-3"> <input type="checkbox" id="inp" /> SDA </label>
+      </div>
+      <div class="form-control">
+        <label for="comment">Any comments</label>
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Enter your thoughts here"
+        ></textarea>
+      </div>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+  </body>
+</html>
